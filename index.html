@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Task Manager</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header id="head">
+      <div>
+        <h1 id="headh1">Task Manager</h1>
+        <form id="taskForm">
+          <input
+            type="text"
+            id="headinput"
+            placeholder="Enter Task"
+            required
+            autocomplete="off"
+          />
+
+          <br />
+          <br />
+          <input id="describeInput" type="text"
+          placeholder="Describe Your Task"
+          required
+          autocomplete="off">
+          <br />
+          <br />
+          <input type="date" id="dateInput" required />
+          <br /><br />
+          <select name="Status" id="statusSelect" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="In Progress">In progress</option>
+            <option value="To Do">To do</option>
+            <option value="Done">Done</option>
+          </select>
+          <br><br>
+          <select name="Status" id="categorySelect" required>
+            <option value="" disabled selected>Select a category</option>
+            <option value="Personal">Personal</option>
+            <option value="Work">Work</option>
+            <option value="Shopping">Shopping</option>
+          </select>
+          <br><br>
+          <select name="Status" id="priority" required>
+            <option value="" disabled selected>Set a priority</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+          <br /><br />
+          <input class="shadow-inset-center" type="submit" value="Add Task" onclick="" />
+        </form>
+      </div>
+    </header>
+    <main>
+      <div id="taskList"></div>
+    </main>
+    <script src="m1.js"></script>
+  </body>
+</html>
